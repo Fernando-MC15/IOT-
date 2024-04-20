@@ -11,13 +11,18 @@ html {
   }
 
   header{
-    background-color: #032f6ba4;
-    text-align: center;
-    height: 80px;
+    background-color: #570e1b;
+    height: 140px;
     justify-content: center;
     display: flex;
+    align-items: center;
   }
-
+ header > div {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+ }
 
   h1{
     margin: 0;
@@ -26,7 +31,7 @@ html {
   }
 
   .banner{
-    background-image: url(../img/abstract-iot-1000x600.jpg);
+    background-image: url(../img/vishnu-mohanan-pfR18JNEMv8-unsplash-scaled.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +47,7 @@ html {
     color: white;
     background-color: rgba(0, 0, 0, 0.603);
     border-radius: 10px;
+    padding: 2rem;
   }
 
   .centrar {
@@ -49,45 +55,23 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    gap: 10px;
   }
 
   /* seccion equipo */
-
-  .equipos{
-    text-align: center;
-  }
-
-  .equipo{
-    display: flex;
-    justify-content: space-between;
-  }
-  .equipo article{
-    max-width: 380px;
-    text-align: center;
-    background-color: #032f6ba4;
-    border-radius: 10px;
-    padding: 15px;
-  }
-  .equipo article h2{
-    margin: 0;
-    font-size: 25px;
-    color: white;
-  }
-
-  .equipo article figure{
-    max-width: 380px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-
-  .equipo article figure img{
-    width: 100%;
-    border-radius: 50%;
+figure {
+  display: inline;
+  gap: 10px;
 }
+.logo {
+  width: 100px;
+}
+
+  
 footer {
   margin-top: 30px;
-  height: 100px;
-  background-color: #5d79a0;
+  height: 70px;
+  background-color: #570e1b;
   color: white;
   display: flex;
   justify-content: center;
@@ -97,10 +81,18 @@ footer p {
   width: 70%;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
-  .equipo {
+@media screen and (max-width: 580px) {
+  .iframe {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .banner h2{
+    margin: auto;
+    font-size: 35px;
   }
 }

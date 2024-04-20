@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="javascript/wow.min.js"></script>
-    <title>IOT Detector de Gas</title>
+    <title>Sensor DHT11</title>
   </head>
   <body>
     <header>
-      <div class="ancho">
-        <h1>Detector de Gas</h1>
+      <div class="ancho" >
+        <figure>
+          <img src="./img/merida.png" alt="" class="logo">
+        </figure>
+        <h1>Sensor DHT11</h1>
       </div>
     </header>
 
     <section class="banner">
       <div class="ancho wow animate__animated animate__fadeInLeftBig animate__delay-1s">
         <h2>
-          Internet de las cosas
+          Detector de Temperatura
           <br />
-          Maestra: Sara Nelly
+          y
+          <br />
+          Humedad
         </h2>
         <br />
       </div>
@@ -30,44 +35,20 @@
 
     <!-- AQUI IRA LA GRAFICA -->
 
-    <section class="centrar ">
+    <section class="iframe">
 
-      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1937485/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=10&type=line"></iframe>
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2516015/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperatura&type=line"></iframe> <br><br>
+      
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2516015/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humedad&type=line"></iframe> <br>
+     
 
     </section>
 
     <!-- fin -->
 
-    <section class="equipos wow animate__animated animate__zoomIn animate__delay-3s">
-        <h2>Equipo 7</h2>
-        <div class="equipo ancho">
-            <article>
-                <figure>
-                    <img src="img/foto1.jpg" alt="">
-                </figure>
-                <br>
-                <h2>Fernando  Moo Caballero</h2>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/foto2.jpg" alt="">
-                </figure>
-                <br>
-                <h2>Julian Rodriguez Concha</h2>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/foto3.jpg" alt="">
-                </figure>
-                <br>
-                <h2>Miguel Cadenas Tejeda</h2>
-            </article>
-        </div>
-    </section>
+    
     <footer>
-      <p>Copyright© 2022 Equipo7 9ST Todos los derechos reservados.</p>
+      <p>Copyright© 2024 Todos los derechos reservados.</p>
     </footer>
 
     <script>
